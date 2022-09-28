@@ -1,3 +1,118 @@
+body{
+    background-image: url(/img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 main{
     height: max-content;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 40px;
+}
+.planosEnem, .planoRedacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.plano1, .plano2, .plano3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0077ff;
+    border: 3px solid rgb(0, 255, 0);
+    width: 70%;
+    max-width: 328px;
+    padding-inline: 30px;
+    height: 560px;
+    border-radius: 24px;
+}
+
+.planosEnem section h2, .planoRedacao section h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    font-size: 1.8rem;
+}
+.planosEnem section p{
+    color: white;
+    margin-top: -10px;
+    font-size: 1.3rem;
+}
+.planosEnem section li{
+    list-style: none;
+    color: white;
+}
+.planosEnem section ul span{
+    color: rgb(0, 255, 0)
+}
+.planosEnem section button, .planoRedacao button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+    height: 50px;
+    font-size: 1.2rem;
+    padding-inline: 6px;
+    align-self: center;
+}
+
+.planoRedacao section{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(0, 255, 0);
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin-block: 30px;
+    background-color: #0077fe;
+}
+.planoRedacao p{
+    color: white;
+}
+.planoRedacao section p:nth-child(2){
+    font-size: 1.5rem;
+}
+.planoRedacao section p:nth-child(3){
+    margin-block: 32px;
+}
+.preco{
+    font-size: 1.8rem;
+    color: rgb(0, 255, 0);
+    font-weight: 600;
+    text-decoration:underline;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media (min-width: 1000px){
+
+    .planosEnem{
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+    .plano1, .plano2, .plano3{
+        height: 560px;
+    }
+    .planosEnem section button{
+        width: 90%;
+        transition: .5s;
+    }
+    .planoRedacao section button{
+        width: 30%;
+        transition: .5s
+    }
+    .planosEnem section button:hover, .planoRedacao section button:hover{
+        transform: translate(5px, -5px);
+        cursor:pointer
+    }
+    .planoRedacao section{
+        border-radius: 24px;
+    }
+    
 }
