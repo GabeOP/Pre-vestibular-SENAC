@@ -17,6 +17,10 @@ header img{
     width: 128px;
     display: none;
 }
+header a{
+    color: white;
+    text-decoration: none;
+}
 header ul{
     display: flex;
     gap: 26px;
