@@ -18,9 +18,7 @@
     }
 /*------------   INTERFACE   ------------*/
 /*---------------------------------------*/
-img {
-    margin-top: 2em;
-}
+
 
 @media (min-width: 700px){
     .interface {
