@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Contato | IMPULSE</title>
+    <link rel="shortcut icon" href="./img/foguete favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="../Pre-vestibular-SENAC/css/contato.css">
+    <link rel="stylesheet" href="./css/contato.css">
 </head>
 <body>
     <header>
         <img src="./img/logo.png" alt="Logo da empresa">
         <ul>
-             <a href="#"><li>Página inicial</li></a>
-             <a href="#"><li>Cursos</li></a>
-             <a href="#"><li>Contato</li></a>
-             <a href="#"><li> Sobre nós</li></a>
+             <a href="index.html"><li>Página inicial</li></a>
+             <a href="cursos.html"><li>Cursos</li></a>
+             <a href="contato.html"><li>Contato</li></a>
+             <a href="sobre.html"><li> Sobre nós</li></a>
         </ul>
          
     </header>
     <main>
+        <div class="textoContato">
+            <p>Entre em contato conosco através do formulário. Responderemos o mais breve possível através do e-mail preenchido</p>
+        </div>
+        <div class="formCard">
+            <form action="index.html">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="" id="nome">
 
+                    <label for="email">E-mail</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <label for="msg">Mensagem</label>
+                <textarea id="msg" name="" id="" cols="30" rows="10"></textarea>
+
+                <input style="display: block; width: 120px;" id="btn"type="button" value="Enviar">
+            </form>
+        </div>
     </main>
         <footer>
             <ul>
@@ -36,5 +54,6 @@
             </div>
         </footer>
     
+        <script src="./scripts/contato.js"></script>
 </body>
 </html>
