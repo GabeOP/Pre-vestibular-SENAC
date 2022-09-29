@@ -7,14 +7,16 @@
     font-family: 'Oswald', sans-serif;
 
 }
+
+/* INICIO CONFIGURAÇÃO DO HEADER E FOOTER */
 header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 120px;
     width:100%;
-    background-color: #1565c0;
-    font-size: 1.1rem;
+    background-color: #0077fe;
+    border-bottom: 3px solid rgb(0,255,0);
     color: white;
 }
 header img{
@@ -24,25 +26,92 @@ header img{
 header a{
     color: white;
     text-decoration: none;
+    transition: .3s
 }
 header ul{
     display: flex;
     gap: 26px;
     list-style: none;
+    text-transform: uppercase;
+}
+header li{
+    font-size: .9rem;
+}
+header a:hover{
+    color: rgb(0,255,0);
 }
 main{
     height: 90vh;
 }
 footer{
     display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
     padding: 20px;
-    justify-content: space-between;
+    height: 350px;
+    justify-content: space-around;
     align-items: center;
-    background-color: #1565c0;
+    background-color: #0077fe;
+    border-top: 3px solid rgb(0,255,0);
 }
 footer ul{
     list-style: none;
+    line-height: 2.5;
+    color: white;
 }
+footer>img{
+    display: none;
+}
+footer ul li{
+    transition: .1s;
+    text-transform: uppercase;
+}
+footer ul li:hover{
+    color: rgb(0,255,0);
+    cursor:pointer
+}
+.redes-icones img{
+    width: 34px;
+}
+.redes-icones img:hover{
+    border: 2px solid rgb(0,255,0);
+    border-radius: 50%;
+    cursor: pointer
+}
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+@media (min-width: 1000px){
+    header{
+        justify-content: space-around;
+    }
+    header ul{
+        gap: 90px;
+        font-size: 1.3rem;
+    }
+    header li{
+        font-size: 1.1rem
+    }
+    header a:hover{
+        text-decoration: underline;
+    }
+    header img{
+        display: block;
+    }
+    footer{
+        flex-direction: row;
+    }
+    footer>img{
+        display: block;
+    }
+}
+/* FIM CONFIGURAÇÃO DO HEADER E FOOTER */
+
 
 .anima {
     text-align: center;
@@ -69,18 +138,4 @@ footer ul{
 
 }
 
-@media (min-width: 1000px){
-    header{
-        justify-content: space-around;
-    }
-    header ul{
-        gap: 90px;
-        font-size: 1.3rem;
-    }
-    header a:hover{
-        text-decoration: underline;
-    }
-    header img{
-        display: block;
-    }
-}
+
