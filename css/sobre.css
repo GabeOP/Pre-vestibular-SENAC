@@ -1,37 +1,62 @@
 /*---------------------------------------*/
 /*------------   INTERFACE   ------------*/
-    .interface {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+.interface {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
 
-    .interface div {
-        background: #1565c0;
-        margin: 0 auto;
-        width: 51%;
-        padding: 20px;
-        border: 3px solid rgb(0, 255, 0);
-        height: 300px;
-        border-radius: 20px;
-        box-shadow: -5px -6px 15px rgba(0, 255, 0, 0.205);
-    }
+.interface div {
+    background: #1565c0;
+    margin: 10px auto;
+    width: 51%;
+    padding: 20px;
+    border: 3px solid rgb(0, 255, 0);
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: -5px -6px 15px rgba(0, 255, 0, 0.205);
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    height: auto;    
+}
 /*------------   INTERFACE   ------------*/
 /*---------------------------------------*/
 
 
-@media (min-width: 700px){
+@media (min-width: 800px){
     .interface {
-        text-align: justify;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .interface div {
-        width: 30%;
+        width: 40%;
         padding: 20px;
         border: 3px solid rgb(0, 255, 0);
-        height: 450px;
+        height: 500px;
     }
+    main {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 800px) and (max-height: 580px){
+    main {
+        height: auto;
+    }
+}
+
+@media (max-width: 350px){
+    .interface div {
+        height: 30%;
+        width: 70%;
+    } 
 }
 
