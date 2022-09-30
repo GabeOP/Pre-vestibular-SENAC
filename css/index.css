@@ -7,6 +7,9 @@
     font-family: 'Oswald', sans-serif;
 
 }
+.activeLink{
+    border-bottom: 1.5px solid rgb(0,255,0);
+}
 
 /* INICIO CONFIGURAÇÃO DO HEADER E FOOTER */
 header{
@@ -42,6 +45,29 @@ header a:hover{
 }
 main{
     height: 90vh;
+}
+.mainIndex{
+    background-image: none;
+    color: white;
+    text-shadow: 4px 2px 12px black;
+}
+.textoInicio{
+    display: none;
+}
+.botao{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0077fe;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(0,255,0);
+    transition: 1s;
 }
 footer{
     display: flex;
@@ -97,10 +123,26 @@ footer ul li:hover{
     header li{
         font-size: 1.1rem
     }
-    header a:hover{
-        text-decoration: underline;
-    }
     header img{
+        display: block;
+    }
+    .botao{
+
+    }
+    .botao:hover{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer
+    }
+    .mainIndex{
+        background-image: url(../img/foguete.gif);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .textoInicio{
         display: block;
     }
     footer{
@@ -110,19 +152,30 @@ footer ul li:hover{
         display: block;
     }
 }
+@media (min-width: 1700px){
+    .anima {
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+        border-right: 2px solid #000000;
+        padding-right: 3px ;
+        max-width: 0; 
+        white-space: nowrap;
+        overflow: hidden;
+        animation: pisca normal infinite .8s, escrever normal 5s steps(55) both;
+    }
+    .anima{
+        font-size: 3rem;
+    }   
+}
 /* FIM CONFIGURAÇÃO DO HEADER E FOOTER */
 
 
-.anima {
-    text-align: center;
-    justify-content: center;
-    display: inline-block;
-    border-right: 2px solid #000000;
-    padding-right: 3px ;
-    max-width: 0; 
-    white-space: nowrap;
-    overflow: hidden;
-    animation: pisca normal infinite .8s, escrever normal 5s steps(55) both ;
+
+.anima span{
+    text-transform: uppercase;
+    color: rgb(0,255,0);
+
 }
 .cardText{
     display: flex;
