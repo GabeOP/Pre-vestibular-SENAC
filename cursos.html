@@ -12,6 +12,15 @@
 </head>
 
 <body>
+    <div id="abaCarrinho">
+        <button id="btnFechar">X</button>
+        <h1>Carrinho</h1>
+        <ul id="carrinho">
+            <li class="preçoCarrinho">O seu carrinho está vazio</li>
+        </ul>
+        <button id="finalizarCompra" >Finalizar compra</button>
+        <button id="limparCarrinho"> Excluir todos os itens</button>
+    </div>
     <header>
         <a href="index.html">
             <img style="width: 208px" src="./img/logoEmpresa.png" alt="Logo da empresa">
@@ -35,7 +44,9 @@
                 </a>
             </ul>
         </nav>
+        <img id="iconeCarrinho" src="./img/carrinho-compras.png" alt="">
     </header>
+    
     <main>
 
         <h1>veja os nossos planos, escolha um e prepare-se para decolar!</h1>
@@ -44,7 +55,7 @@
         <article class="planosEnem">
 
             <!-- Section 1 feita para o primeiro curso -->
-            <section class="plano1">
+            <section id="plano1" class="plano1">
 
                 <h2>Enem intensivo 2022</h2>
 
@@ -68,11 +79,11 @@
                         </li>
                     </ul>
                 </div>
-                <button>Escolher esse plano!🚀</button>
+                <button id="btn1">Escolher esse plano!🚀</button>
             </section>
 
             <!-- Section 2 feita para o segundo curso -->
-            <section class="plano2">
+            <section id="plano2" class="plano2">
                 <h2>Enem intensivo plus 2022 🔥</h2>
                 <p>Em até 12x sem juros de
                     <br>
@@ -97,11 +108,11 @@
                         </li>
                     </ul>
                 </div>
-                <button>Escolher esse plano! 🚀</button>
+                <button id="btn2">Escolher esse plano! 🚀</button>
             </section>
 
             <!-- Section 3 feita para o terceiro curso -->
-            <section class="plano3">
+            <section id="plano3" class="plano3">
                 <h2>Enem medicina 2022🥼</h2>
                 <p>Em até 12x sem juros de
                     <br>
@@ -129,12 +140,12 @@
                         </li>
                     </ul>
                 </div>
-                <button>Escolher esse plano! 🚀</button>
+                <button id="btn3">Escolher esse plano! 🚀</button>
             </section>
         </article>
 
         <!-- Criei outro article para ele ocupar a linha inteira e ficar abaixo -->
-        <article class="planoRedacao">
+        <article id="planoRedacao" class="planoRedacao">
             <section>
                 <h2>curso intensivo de redação 📑</h2>
                 <p>Curso exclusivo para quem quer dar um foco especial em redação!</p>
@@ -142,11 +153,12 @@
                     <br>
                     <span class="preco">R$19,90</span>
                 </p>
-                <button>Escolher esse plano! 🚀</button>
+                <button id="btn4">Escolher esse plano! 🚀</button>
             </section>
         </article>
 
     </main>
+    
     <footer>
         <img style="width: 208px; border: 2px solid white; border-radius: 50px;" src="./img/logoEmpresa.png"
             alt="Logo da empresa">
@@ -168,6 +180,7 @@
         </div>
     </footer>
 
+    <script src="./scripts/cursos.js"></script>
 </body>
 
 </html>

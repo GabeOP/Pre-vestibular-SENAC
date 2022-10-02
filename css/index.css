@@ -16,8 +16,10 @@ body{
 /* INICIO CONFIGURAÇÃO DO HEADER E FOOTER */
 header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     height: 120px;
     width:100%;
     background-color: #0077fe;
@@ -166,7 +168,10 @@ main{
 
 @media (min-width: 917px){
     header{
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-inline: 160px;
+        flex-direction: row;
+
     }
     header li{ 
         font-size: 1.1rem;
