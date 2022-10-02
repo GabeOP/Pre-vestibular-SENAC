@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-
+    font-family: 'Staatliches', 'Calibri';
 }
 .activeLink{
     border-bottom: 1.5px solid rgb(0,255,0);
