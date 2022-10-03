@@ -21,9 +21,9 @@
 .p {
     color: rgba(240, 248, 255, 0.952);
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.700);
-    font-size: 1.4em;
+    font-size: 1.35em;
     transform: translateY(100px);
-    transition: 0.5s;
+    transition: 1s;
     opacity: 0;
 }
 
