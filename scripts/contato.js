@@ -6,11 +6,12 @@ let btn = document.getElementById('btn');
 
 btn.addEventListener('click', validacao)//Dizendo que quando clicar no botão(btn), quero que 'escute' o que está dentro do bloco.
 
+
 function validacao(){
     if(nome.value === '' || email.value === '' || msg.value === ''){ //Se qualquer um dos input tiver com o valor vazio, mostrar um alerta pedindo para preencher os campos.
         alert('Preencha todos os campos');
-
-    }else{//Senão, mostrar um alerta confirmando o envio do formulário e direcionando para a página inicial.
+    }
+    else{ //Senão, mostrar um alerta confirmando o envio do formulário e direcionando para a página inicial.
         alert("Sua mensagem foi enviada! Agradecemos o contato.")
         window.location.href="index.html"
     }
