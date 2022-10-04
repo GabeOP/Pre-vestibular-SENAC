@@ -39,27 +39,25 @@
 
 
     <main class="interface">
-        <div>
-            <p>
-                O Pré-vestibular está transformando o acesso à educação no país. O objetivo do curso é garantir sua
+        <div class="column">
+            <h1 style="text-align: center;">História do curso</h1>
+            <p class="p" style="text-align: justify;">
+                O curso preparatório Impulso foi criado pela pedagoga Nathália Cardoso e iniciou as atividades em maio de 2016 no Rio de Janeiro com o intuito de preparar e aprovar os alunos em seus respectivos cursos tão desejados. Hoje já conta com mais de 800 aprovados em todo o Brasil e até mesmo alunos já formados em suas áreas.
+            </p>
+        </div>
+
+        <div class="column">
+            <h1 style="text-align: center;">Nosso Objetivo</h1>
+            <p class="p" style="text-align: justify;">
+                O impulso está transformando o acesso à educação no país. O objetivo do curso é garantir sua
                 aprovação o mais rápido
-                possível, ensinando APENAS o que vocêprecisa para ser aprovado no concurso dos seus sonhos. Os alunos
+                possível, ensinando APENAS o que você precisa para ser aprovado no concurso dos seus sonhos. Os alunos
                 contam
                 com toda a experiência de professores renomados para garantir que as aulas sejam dinâmicas e sem
                 enrolação,
                 oferecendo tudo o que o aluno precisa para recuperar o tempo perdido na escola. Você vai se transformar
                 numa
                 Máquina de Papiro!
-            </p>
-        </div>
-
-        <div>
-            <p>
-                O curso preparatório Impulso foi criado pela pedagoga [nome do personagem] e iniciou as atividades em
-                maio de 2016 no Rio
-                de Janeiro com o intuito de preparar e aprovar os alunos em seus respectivos cursos tão desejados. Hoje
-                já
-                conta com mais de 800 aprovados em todo o Brasil e até mesmo alunos já formados em suas áreas.
             </p>
         </div>
     </main>
@@ -83,6 +81,14 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/sobre.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".column"), {
+            max: 10,
+            speed: 400,
+            scale: 0.9,
+        });
+    </script>
 
 </body>
 
