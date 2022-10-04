@@ -41,6 +41,7 @@ nav{
 header ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 19px;
     list-style: none;
     text-transform: uppercase;

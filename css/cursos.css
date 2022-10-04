@@ -5,9 +5,14 @@ main{
 /* INICIO JAVASCRIPT */
 
 #iconeCarrinho{
-    width: 24px;
+    width: 40px;
     cursor: pointer;
     display: block;
+    position: fixed;
+    left: 90%;
+    top: 50%;
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 50%;
 }
 #abaCarrinho{
     height: 500px;
@@ -82,6 +87,8 @@ h1{
     text-transform: uppercase;
     margin-block: 40px;
     font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .planosEnem, .planoRedacao{
     display: flex;
@@ -112,14 +119,12 @@ h1{
 .planosEnem section p, .planoRedacao section p:nth-child(3){
     color: rgb(228, 228, 228);
     margin-top: -10px;
-    font-size: 1.3rem;
+    font-size: .8rem;
 }
 .preco{
-    font-size: 2.1rem;
+    font-size: 3.2rem;
     color: rgb(0, 255, 0);
     font-weight: 600;
-    text-decoration:underline;
-    text-shadow: 1px 1px 1px black;
 }
 .planosEnem section li{
     list-style: none;
@@ -164,6 +169,12 @@ h1{
 @media (min-width: 621px){
     .planoRedacao section{
         border-radius: 24px;
+    }
+    #iconeCarrinho{
+        position:static;
+        border: none;
+        border-radius: 0;
+        width: 24px;
     }
 }
 @media (min-width: 1000px){
