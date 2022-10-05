@@ -15,7 +15,9 @@ main{
 }
 label{
     text-transform: uppercase;
-    display: block; 
+    display: block;
+    color: white;
+    text-shadow: 1px 1px 3px black;
 }
 input{
     width: 100%;
