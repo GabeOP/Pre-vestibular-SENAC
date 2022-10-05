@@ -27,6 +27,7 @@ main{
     border-radius: 5px; 
     transition: 1s;
     color: white;
+    z-index: 1;
 }
 
 #btnFechar{
