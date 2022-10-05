@@ -37,6 +37,13 @@ main{
     border: 1px solid rgb(0, 255, 0);
     box-shadow: 1px 1px 10px black;
 }
+.imagens figure figcaption{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+
+}
+
 @media (min-width: 1080px){
     .imagensWrapper{
         height: 650px;
@@ -48,7 +55,8 @@ main{
         gap: 60px;
     }
     .imagens img{
-        width: 220px;
-        height: 250px;
+        width: 280px;
+        height: 350px;
+
     }
 }
