@@ -18,6 +18,17 @@
     position: relative;
 }
 
+.ftinha {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ftinha img {
+    border-radius: 10px;
+}
+
 .p {
     color: rgba(240, 248, 255, 0.952);
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.700);
