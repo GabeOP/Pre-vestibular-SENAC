@@ -25,10 +25,9 @@ main{
 .imagens{
     display: flex;
     overflow-y: scroll;
-    padding: 30px;
+    padding: 8px;
     gap: 10px;
-    max-height: 450px;
-    
+    max-height: 450px;  
 }
 .imagens img{
     width: 200px;
